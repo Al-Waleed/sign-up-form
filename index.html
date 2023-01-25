@@ -10,13 +10,48 @@
 <body>
     <div class="image-container">
         <div>
-            <img class="bgImage" src="./images/raven.jpg" alt="soul leaving jar">
+            <img class="bgImage" src="./images/raven2.jpg" alt="soul leaving jar">
         </div>
         <div class="form-container">
             <heading>WELCOME TO THE AFTER LIFE</heading>
-            <p>Please sign up for the afterlife or you wont be accepted into heaven or hell and your soul will be trapped on this webpage forever until you create your account.</p>
+            <p>Please sign up for the afterlife or you wont be accepted into heaven or hell and your soul will be trapped on this webpage forever until you create an account.</p>
             <div>
-                <form action="POST"></form>
+                <form action="POST">
+                    <fieldset class="first-row">
+                        <div>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname">
+                        </div>
+
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="second-row">
+                        <div>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+
+                        <div>
+                            <label for="idnum">ID NUMBER</label>
+                            <input type="tel" name="idnum" id="idnum">
+                        </div>
+
+                        <div>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword">
+                        </div>
+                    </fieldset>
+                    
+                </form>
             </div>
         </div>
     </div>

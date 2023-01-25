@@ -37,7 +37,26 @@ heading {
 }
 
 p {
-    margin: 0 4rem 4rem 4rem;
+    margin: 0 4rem;
     font-size: 28px;
 }
 
+form {
+    margin: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+fieldset {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 1rem;
+}
