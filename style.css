@@ -14,7 +14,7 @@
 
 .bgImage {
     width: 480px;
-    height: 636px;
+    height: auto;
 }
 
 .image-container {
@@ -36,7 +36,7 @@ heading {
     color: rgb(240, 248, 255);
 }
 
-p {
+.description {
     margin: 0 4rem;
     font-size: 28px;
 }
@@ -49,14 +49,69 @@ form {
 }
 
 fieldset {
-    height: 8rem;
+    height: 10rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: none;
 }
 
 input {
     background-color: aliceblue;
+    color: black;
     border: none;
     border-radius: 1rem;
+    padding: 0.4rem;
+    width: 10rem;
+    font-size: 0.8rem;
+    font-family: fantasy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+} 
+
+.second-row ul {
+    align-self: flex-end;
+}
+
+ul {
+    list-style: none;
+}
+
+.button-container{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.button-container p {
+    font-size: 0.8rem;
+   
+}
+
+button {
+    width: 11rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+button:hover {
+    background-color: rgb(189, 41, 41); 
+}
+input:focus:invalid {
+    outline: 2px solid red;
+}
+a {
+    text-decoration: none;
+    color: rgb(189, 41, 41);
+}
+
+a:hover {
+    color: rgb(255, 60, 60);
+    
 }
