@@ -14,44 +14,52 @@
         </div>
         <div class="form-container">
             <heading>WELCOME TO THE AFTER LIFE</heading>
-            <p>Please sign up for the afterlife or you wont be accepted into heaven or hell and your soul will be trapped on this webpage forever until you create an account.</p>
+            <p class="description">Please sign up for the afterlife or you wont be accepted into heaven or hell and your soul will be trapped on this webpage forever until you create an account.</p>
             <div>
-                <form action="POST">
+                <form action="POST" id="main-form">
                     <fieldset class="first-row">
-                        <div>
-                            <label for="firstname">FIRST NAME</label>
-                            <input type="text" name="firstname" id="firstname">
-                        </div>
+                        <ul>
+                            <li><label for="firstname">FIRST NAME</label></li>
+                            <li><input required type="text" name="firstname" id="firstname" placeholder="John"></li>
+                        </ul>
 
-                        <div>
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
-                        </div>
+                        <ul>
+                            <li><label for="email">EMAIL</label></li>
+                            <li><input required type="email" name="email" id="email" placeholder="email@email.com"></li>
+                        </ul>
 
-                        <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-                        </div>
+                        <ul>
+                            <li><label for="password">PASSWORD</label></li>
+                            <li><input required type="password" name="password" id="password" minlength="8" maxlength="16"></li>
+                        </ul>
                     </fieldset>
 
                     <fieldset class="second-row">
-                        <div>
-                            <label for="lastname">LAST NAME</label>
-                            <input type="text" name="lastname" id="lastname">
-                        </div>
+                        <ul>
+                            <li><label for="lastname">LAST NAME</label></li>
+                            <li><input required type="text" name="lastname" id="lastname" placeholder="Doe"></li>
+                        </ul>
 
-                        <div>
-                            <label for="idnum">ID NUMBER</label>
-                            <input type="tel" name="idnum" id="idnum">
-                        </div>
+                        <ul>
+                            <li><label for="idnum">ID NUMBER</label></li>
+                            <li><input required type="tel" name="idnum" id="idnum" placeholder="0123456789" minlength="10" maxlength="10" ></li>
+                        </ul>
 
-                        <div>
-                            <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword" id="confirmPassword">
-                        </div>
+                        <ul>
+                            <li><label for="confirmPassword">CONFIRM PASSWORD</label></li>
+                            <li><input required type="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="16"></li>
+                        </ul>
                     </fieldset>
                     
                 </form>
+
+                <div class="button-container">
+                    <button type="submit" form="main-form">CREATE ACCOUNT</button>
+                    <span>Already have an account? <a href="">SIGN IN</a></span>
+                    <p>By clicking create account, you agree to our <a href="">Terms and Conditions</a> and <a href="">Privacy Statement</a>.</p>
+
+                </div>
+
             </div>
         </div>
     </div>
